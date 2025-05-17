@@ -1,0 +1,71 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #83C5BE;
+    display: flex;
+    padding: 0px 145px 0px 128px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+h1{
+    color:#FFFCF2;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#login{
+    width: 750px;
+    height: 300px;
+    border-radius: 51.216px;
+    border: 4.656px solid #FFB3C6;
+    background: #FFE5EC;
+}
+#login>pre{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#login>input{
+    width: 650px;
+    height: 65px;
+    border-radius: 18.624px;
+    border: 4.656px solid #FFB3C6;
+    background: #FFFCF2;
+    margin-left: 30px;
+}
+#botao>button{
+    width: 300px;
+    height: 45px;
+    border-radius: 58.98px;
+    border: 6.939px solid #FFB3C6;
+    background: #FFE5EC;
+    margin-top:35px;
+    margin-left: 200px;
+}
+
+#pagInicial>button{
+    width: 300px;
+    height: 45px;
+    border-radius: 58.98px;
+    border: 6.939px solid #FFB3C6;
+    background: #FFE5EC;
+}
+#pagInicial>form>button{
+    width: 300px;
+    height: 45px;
+    border-radius: 58.98px;
+    border: 6.939px solid #FFB3C6;
+    background: #FFE5EC;
+}
+
+#tentarNovamente>form>button{
+    width: 300px;
+    height: 45px;
+    border-radius: 58.98px;
+    border: 6.939px solid #FFB3C6;
+    background: #FFE5EC;
+}
