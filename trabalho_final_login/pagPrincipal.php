@@ -7,11 +7,8 @@
     <link rel="stylesheet" href="css/style_login.css">
 </head>
 <body>
-    <?php 
-    session_start();
-    if (!isset($_SESSION['idusuario'])) {
-        header("Location: index.php");
-        exit;}
+    <?php
+        require_once 'seguranca.php'
     ?>
 
     <h1>O que você procura?</h1> <br>
