@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Login</title><link rel="stylesheet" href="css/style_login.css">
-    
-
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="css/style_login.css">
 </head>
+
 <body>
     <?php 
         if(isset($_GET['erro'])){
@@ -18,14 +18,18 @@
     <h1>Seja bem vindo! Digite seu e-mail e senha para entrar. </h1> <br> <br>
     <form action="login.php" method="POST">
         <div id="login">
-            <pre>     E-mail: </pre>
-            <input type = "email" name="email"> <br> <br>
-            <pre>    Senha:  </pre>
-            <input type = "password" name="senha"> 
+            <label>E-mail: </label> <br>
+                <input type = "email" name="email" required> <br> <br>
+            <label> Senha: </label> <br>   
+                <input type = "password" name="senha" required>  <br> <br>
+
+            <h4> <a href="http://localhost/trabalho_final_login/cadastro.php" id="link_cadastro"> Não tem conta? Cadastre-se aqui! </h4> 
         </div>
 
-        <div id="botao">
-        <button type="submit">ENTRAR</button>
+
+
+        <div id="botao_login">
+            <button type="submit">ENTRAR</button>
         </div>
     </form>
    
