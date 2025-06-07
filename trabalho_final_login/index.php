@@ -15,18 +15,15 @@
         }}
     ?>
     
-    <h1>Seja bem vindo! Digite seu e-mail e senha para entrar. </h1> <br> <br>
+    <h1>Seja bem vindo novamente! Digite seu e-mail e senha para entrar. </h1> <br> <br>
     <form action="login.php" method="POST">
         <div id="login">
             <label>E-mail: </label> <br>
                 <input type = "email" name="email" required> <br> <br>
-            <label> Senha: </label> <br>   
+
+            <label>Senha: </label> <br>   
                 <input type = "password" name="senha" required>  <br> <br>
-
-            <h4> <a href="http://localhost/trabalho_final_login/cadastro.php" id="link_cadastro"> Não tem conta? Cadastre-se aqui! </h4> 
         </div>
-
-
 
         <div id="botao_login">
             <button type="submit">ENTRAR</button>

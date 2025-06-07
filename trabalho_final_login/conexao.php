@@ -1,6 +1,4 @@
-<?php
-    session_start();
-    
+<?php   
     global $conexao;
 
     try {

@@ -63,6 +63,21 @@ h1{
     border: 6.939px solid #FFB3C6;
     background: #FFE5EC;
 }
+.botao_inicio>a{
+    text-decoration: none;
+    padding: 10px 53px;
+    border-radius: 58.98px;
+    border: 6.939px solid #FFB3C6;
+    background: #FFE5EC;
+    color: black;
+}
+.botao_inicio>button{
+    width: 300px;
+    height: 45px;
+    border-radius: 58.98px;
+    border: 6.939px solid #FFB3C6;
+    background: #FFE5EC;
+}
 
 #link_cadastro{
     color:black;

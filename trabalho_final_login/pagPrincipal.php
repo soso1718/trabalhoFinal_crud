@@ -16,10 +16,13 @@
         <form action="logout.php">
             <button type="submit">Logout</button> <br> <br>
         </form>
-        <button type="submit">Cadastro de novos pacientes</button> <br> <br>
-        <button type="submit">Estoque</button> <br> <br>
-        <button type="submit">Agendamentos</button> <br> <br>
-        <button type="submit">Catálogo</button> <br> <br>
+
+        <div class="botao_inicio">
+            <a href="http://localhost/trabalho_final_login/pagCadastro"> Cadastro de novos pacientes  </a> <br> <br>
+            <button type="submit">Estoque</button> <br> <br>
+            <button type="submit">Agendamentos</button> <br> <br>
+            <button type="submit">Catálogo</button> <br> <br>
+        </div>
     </div>
 
 </body>
