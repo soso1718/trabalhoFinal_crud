@@ -2,8 +2,8 @@
     session_start();
 
     if((isset($_POST["email"]) AND $_POST["email"] != null) AND (isset($_POST["senha"]) AND $_POST["senha"] != null)){
-        require 'conexao.php';
-        require 'UsuarioClass.php';
+        require_once 'conexao.php';
+        require_once 'UsuarioClass.php';
 
         $u = new Usuario();
         

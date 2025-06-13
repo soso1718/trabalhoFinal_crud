@@ -9,7 +9,7 @@
 
 <body>
     <?php 
-        require 'seguranca.php';
+        require_once 'seguranca.php';
 
         if(isset($_GET['erro'])){
             if($_GET['erro']==2){
@@ -23,7 +23,7 @@
         <input type = "email" name="email" required> <br> <br>
     <label> CPF: </label> <br>
         <input type = "number" name="cpf" required> <br> <br>
-    <input type="hidden" name="act" value="save">
+    <input type="hidden" name="" value="save">
 
     <div id="botao_cadastro">
         <button type="submit">CADASTRAR</button>
