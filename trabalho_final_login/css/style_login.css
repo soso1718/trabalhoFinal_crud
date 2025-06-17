@@ -13,8 +13,13 @@ body{
 }
 h1{
     color:#FFFCF2;
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+    /* background-color: #FFB3C6;
+    border-radius: 20px; */
+    /* padding: 5px;
+    border: 4.656px solid #FFB3C6;
+    border-radius: 30px; */
 }
 
 #login{
@@ -63,21 +68,24 @@ h1{
     border: 6.939px solid #FFB3C6;
     background: #FFE5EC;
 }
-.botao_inicio>a{
+.botao_inicio>a,button{
     text-decoration: none;
     padding: 10px 53px;
     border-radius: 58.98px;
     border: 6.939px solid #FFB3C6;
     background: #FFE5EC;
     color: black;
+    width: 300px;
+    height: 45px;
+    
 }
-.botao_inicio>button{
+/* .botao_inicio>button{
     width: 300px;
     height: 45px;
     border-radius: 58.98px;
     border: 6.939px solid #FFB3C6;
     background: #FFE5EC;
-}
+} */
 
 #link_cadastro{
     color:black;
@@ -98,7 +106,8 @@ h1{
     border-radius: 18.624px;
     border: 4.656px solid #FFB3C6;
     background: #FFFCF2;
-    margin-left: 50px;
+    margin-left: 60px;
+   
 }
 #cadastro>label{
     font-size: 30px;
@@ -118,4 +127,63 @@ h1{
 #link_login{
     color:black;
     padding-left: 249px;
+}
+
+table{
+    background-color: #FFE5EC;
+    width: 100%;
+    border: 6.939px solid #FFB3C6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+table>th, td{
+    padding: 5px;
+    font-size: 20px;
+}
+tr>th{
+    padding: 5px;
+    font-size: 20px;
+   
+}
+
+#estoque{
+    width: 750px;
+    height: 430px;
+    border-radius: 51.216px;
+    border: 4.656px solid #FFB3C6;
+    background: #FFE5EC;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+#estoque>input{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    width: 700px;
+    border-radius: 30px;
+    padding: 5px;
+    color:#83C5BE;
+    border: 2px solid #FFB3C6;
+}
+#estoque>label{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 30px;
+}
+#botao_estoque>button{
+    width: 300px;
+    height: 45px;
+    border-radius: 58.98px;
+    border: 6.939px solid #FFB3C6;
+    background: #FFE5EC;
+    margin-top:35px;
+    margin-left: 208px;
+}
+a{
+    text-decoration: none;
+    color:#4ea098;
+}
+button>a{
+    color: black;
+    font-size: 15px;
 }

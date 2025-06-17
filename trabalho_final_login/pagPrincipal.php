@@ -19,7 +19,7 @@
 
         <div class="botao_inicio">
             <a href="http://localhost/trabalho_final_login/pagCadastro"> Cadastro de novos pacientes  </a> <br> <br>
-            <button type="submit">Estoque</button> <br> <br>
+            <a href="http://localhost/trabalho_final_login/form_estoque.php"> Estoque </a> <br> <br>
             <button type="submit">Agendamentos</button> <br> <br>
             <button type="submit">Catálogo</button> <br> <br>
         </div>
