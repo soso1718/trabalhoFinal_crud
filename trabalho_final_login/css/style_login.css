@@ -15,11 +15,6 @@ h1{
     color:#FFFCF2;
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
-    /* background-color: #FFB3C6;
-    border-radius: 20px; */
-    /* padding: 5px;
-    border: 4.656px solid #FFB3C6;
-    border-radius: 30px; */
 }
 
 #login{
@@ -68,7 +63,7 @@ h1{
     border: 6.939px solid #FFB3C6;
     background: #FFE5EC;
 }
-.botao_inicio>a,button{
+.inicio>a,button{
     text-decoration: none;
     padding: 10px 53px;
     border-radius: 58.98px;
@@ -179,6 +174,50 @@ tr>th{
     margin-top:35px;
     margin-left: 208px;
 }
+#cadastro{
+    width: 750px;
+    height: 430px;
+    border-radius: 51.216px;
+    border: 4.656px solid #FFB3C6;
+    background: #FFE5EC;
+    padding-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#cadastro>input{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    width: 700px;
+    border-radius: 30px;
+    padding: 5px;
+    color:#83C5BE;
+    border: 2px solid #FFB3C6;
+}
+#cadastro>label{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 30px;
+}
+#botao_cadastro>button{
+    width: 300px;
+    height: 45px;
+    border-radius: 58.98px;
+    border: 6.939px solid #FFB3C6;
+    background: #FFE5EC;
+    margin-top:80px;
+    margin-left: 220px;
+}
+
+#leitura_cadastro>button{
+    width: 300px;
+    height: 45px;
+    border-radius: 58.98px;
+    border: 6.939px solid #FFB3C6;
+    background: #FFE5EC;
+    margin-top:180px;
+    margin-left: 220px;
+}
 a{
     text-decoration: none;
     color:#4ea098;
@@ -186,4 +225,106 @@ a{
 button>a{
     color: black;
     font-size: 15px;
+}
+
+h3{
+    color:#FFFCF2;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
+}
+
+
+.inicio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:15px 3px;
+}
+.div_logout{
+    flex-direction: column;
+    width: 320px;
+    height: 300px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+
+}
+.div_logout>img{
+   margin-left: 0%;
+   width: 280px;
+   height: 280px;
+   border-radius: 20px;
+   margin-left: 0px;
+   border: 6.939px solid #FFB3C6; 
+}
+.div_logout>button{
+    width: 288px;
+   
+}
+
+
+.div_cadastro{
+    flex-direction: column;
+    width: 320px;
+    height: 300px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+.div_cadastro>img{
+    margin-left: 0%;
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
+    margin-left: 0px;
+    border: 6.939px solid #FFB3C6; 
+}
+
+.div_cadastro>button{
+    width: 280px;
+}
+
+
+.div_estoque{
+    flex-direction: column;
+    width: 320px;
+    height: 300px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+.div_estoque>img{
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
+    border: 6.939px solid #FFB3C6; 
+}
+
+.div_estoque>button{
+    width: 280px;
+}
+
+.div_agendamentos{
+    flex-direction: column;
+    width: 320px;
+    height: 300px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+.div_agendamentos>img{
+    margin-left: 0%;
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
+    margin-left: 0px;
+    margin-top: 30px;
+    border: 6.939px solid #FFB3C6; 
+}
+.div_agendamentos>button{
+    width: 280px;
 }

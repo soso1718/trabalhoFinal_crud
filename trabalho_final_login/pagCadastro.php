@@ -16,19 +16,23 @@
                 echo "<h3> Não foi possível realizar o cadastro.</h3> <br>";
         }}
     ?>
+    <h1>Cadastrar novo paciente</h1>
     <form id="cadastro" action="cadastro.php" method="POST">
     <label> Nome: </label> <br>
         <input type = "text" name="nome" required> <br> <br>
     <label>E-mail: </label> <br>
         <input type = "email" name="email" required> <br> <br>
     <label> CPF: </label> <br>
-        <input type = "number" name="cpf" required> <br> <br>
-    <input type="hidden" name="" value="save">
+        <input type = "text" name="cpf" required> <br> <br>
+    <input type="hidden" name="id" value="save">
 
     <div id="botao_cadastro">
-        <button type="submit">CADASTRAR</button>
+        <button type="submit">CADASTRAR</button> <br><br><br><br>
+
     </div>
 
     </form>
+
+    <button id="leitura_cadastro"><a href="http://localhost/trabalho_final_login/cadastro.php"> Listagem de pacientes</a></button>
 </body>
 </html>

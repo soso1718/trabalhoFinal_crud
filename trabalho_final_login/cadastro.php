@@ -37,18 +37,18 @@ require_once 'conexao.php';
     <link rel="stylesheet" href="css/style_login.css">
 </head>
 <body>
-<!-- <?php 
-// require_once 'seguranca.php';
-//     if(isset($_GET['sucesso'])){
-//         if($_GET['sucesso']==1){
-//             echo "<h3> Cadastro realizado com sucesso!.</h3> ";
-//         }elseif($_GET['sucesso']==2){
-//             echo "Paciente excluído com sucesso!";
-//         } else{
-//             echo "Atualização feita com sucesso!";
-//         }
-//     }
-?> -->
+<?php 
+require_once 'seguranca.php';
+    if(isset($_GET['sucesso'])){
+        if($_GET['sucesso']==1){
+            echo "<h3> Cadastro realizado com sucesso!</h3> ";
+        }elseif($_GET['sucesso']==2){
+            echo "Paciente excluído com sucesso!";
+        } else{
+            echo "Atualização feita com sucesso!";
+        }
+    }
+?>
     <h1>Listagem de pacientes</h1>
     <table id="tabela_pacientes" border="1" width="100%">
         <tr>
@@ -59,17 +59,6 @@ require_once 'conexao.php';
         </tr>
     
         <?php
-
-        require_once 'seguranca.php';
-        if(isset($_GET['sucesso'])){
-            if($_GET['sucesso']==1){
-                echo "<h3> Cadastro realizado com sucesso!.</h3> ";
-            }elseif($_GET['sucesso']==2){
-                echo "Paciente excluído com sucesso!";
-            } else{
-                echo "Atualização feita com sucesso!";
-            }
-    }
         try {
             $stmt = $conexao->prepare("SELECT * FROM cadastro");
             if ($stmt->execute()) {
@@ -78,7 +67,7 @@ require_once 'conexao.php';
                 echo "<tr>";
                 echo "<td>".$rs->nome."</td><td>".$rs->email."</td><td>".$rs->cpf."</td>";
                 echo "<td><center>";
-                echo "<a href=\"http://localhost/trabalho_final_login/atualizaCadastro.php?id=".$rs->id."\">[Alterar]</a>";
+                echo "<a href=\"http://localhost/trabalho_final_login/form_atualizarCadastro.php?id=".$rs->id."\">[Alterar]</a>";
                 echo "<a href=\"http://localhost/trabalho_final_login/deleteCadastro.php?id=".$rs->id."\" onclick=\"return confirm('Tem certeza que deseja excluir esse paciente?')\">[Excluir]</a>" ;
                 echo "</center></td>";
                 echo "</tr>";
@@ -91,7 +80,7 @@ require_once 'conexao.php';
         }
     ?>
     </table>
-    <button><a href="http://localhost/trabalho_final_login/pagCadastro"> Cadastrar novo paciente </a></button>
+    <button><a href="http://localhost/trabalho_final_login/pagCadastro.php"> Cadastrar novo paciente </a></button>
 
     
 </body>

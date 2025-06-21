@@ -46,6 +46,8 @@ require_once 'seguranca.php';
             echo "<h3> Lote adicionado com sucesso!</h3> ";
         } elseif($_GET['sucesso']==2){
             echo "<h3> Lote removido com sucesso!</h3>";
+        }else{
+            echo "<h3> Lote atualizado com sucesso! </h3>";
         }
     }
 ?>
@@ -67,7 +69,7 @@ require_once 'seguranca.php';
                 echo "<tr>";
                 echo "<td>".$rs->produto."</td><td>".$rs->validade."</td><td>".$rs->quantidade."</td><td>.$rs->categoria.";
                 echo "<td><center>";
-                echo "<a href=\"http://localhost/trabalho_final_login/atualizaEstoque.php?id=".$rs->id_lote."\">[Alterar]</a>";
+                echo "<a href=\"http://localhost/trabalho_final_login/form_atualizaEstoque.php?id=".$rs->id_lote."\">[Alterar]</a>";
                 echo "<a href=\"http://localhost/trabalho_final_login/deleteEstoque.php?id=".$rs->id_lote."\" onclick=\"return confirm('Tem certeza que deseja excluir esse paciente?')\">[Excluir]</a>" ;
                 echo "</center></td>";
                 echo "</tr>";
