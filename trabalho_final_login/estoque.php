@@ -51,6 +51,15 @@ require_once 'seguranca.php';
         }
     }
 ?>
+<menu id="cabecalho">
+        <img src="images/logo.png"> 
+        <li><a href="http://localhost/trabalho_final_login/pagPrincipal.php">Início</a></li>
+        <li><a href="http://localhost/trabalho_final_login/pagCadastro.php">Cadastro de pacientes</a></li>
+        <li><a href="http://localhost/trabalho_final_login/form_estoque.php">Cadastrar lote</a></li>
+        <li><a href="http://localhost/trabalho_final_login/agendamento.php">Agendamentos</a></li>
+        <li><a href="http://localhost/trabalho_final_login/catalogo.php">Catálogo</a></li>
+    </menu>
+
     <h1>Gerenciador de estoque</h1>
     <table id="tabela_estoque" border="1" width="100%">
         <tr>

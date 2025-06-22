@@ -31,6 +31,15 @@ require_once 'seguranca.php';
     <?php 
     require_once 'seguranca.php'; ?>
     
+    <menu id="cabecalho">
+        <img src="images/logo.png"> 
+        <li><a href="http://localhost/trabalho_final_login/pagPrincipal.php">Início</a></li>
+        <li><a href="http://localhost/trabalho_final_login/cadastro.php">Listagem de pacientes</a></li>
+        <li><a href="http://localhost/trabalho_final_login/estoque.php">Estoque</a></li>
+        <li><a href="http://localhost/trabalho_final_login/agendamento.php">Agendamentos</a></li>
+        <li><a href="http://localhost/trabalho_final_login/catalogo.php">Catálogo</a></li>
+    </menu>
+    
      <h1>Alterar cadastro de paciente</h1>
     <form id="cadastro" action="atualizaCadastro.php" method="POST">
     <label> Nome: </label> <br>

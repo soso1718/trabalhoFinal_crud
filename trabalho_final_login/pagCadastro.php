@@ -16,7 +16,17 @@
                 echo "<h3> Não foi possível realizar o cadastro.</h3> <br>";
         }}
     ?>
+    <menu id="cabecalho">
+        <img src="images/logo.png"> 
+        <li><a href="http://localhost/trabalho_final_login/pagPrincipal.php">Início</a></li>
+        <li><a href="http://localhost/trabalho_final_login/cadastro.php">Listagem de pacientes</a></li>
+        <li><a href="http://localhost/trabalho_final_login/estoque.php">Estoque</a></li>
+        <li><a href="http://localhost/trabalho_final_login/agendamento.php">Agendamentos</a></li>
+        <li><a href="http://localhost/trabalho_final_login/catalogo.php">Catálogo</a></li>
+    </menu>
+
     <h1>Cadastrar novo paciente</h1>
+
     <form id="cadastro" action="cadastro.php" method="POST">
     <label> Nome: </label> <br>
         <input type = "text" name="nome" required> <br> <br>
@@ -27,12 +37,13 @@
     <input type="hidden" name="id" value="save">
 
     <div id="botao_cadastro">
-        <button type="submit">CADASTRAR</button> <br><br><br><br>
+        <button type="submit">CADASTRAR</button> <br>
 
+       
     </div>
 
     </form>
 
-    <button id="leitura_cadastro"><a href="http://localhost/trabalho_final_login/cadastro.php"> Listagem de pacientes</a></button>
+   
 </body>
 </html>

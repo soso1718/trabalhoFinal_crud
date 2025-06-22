@@ -4,46 +4,70 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #83C5BE;
+    background-color: #a8dadc;
     display: flex;
     padding: 0px 145px 0px 128px;
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
 }
+
+@font-face {
+    font-family: 'Asgaber';
+    src: url('../fontes/asgaber/Asgaber\ DEMO\ VERSION.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Simple';
+    src: url('../fontes/simple_michael/Simple\ Michael.otf') format('truetype');
+}
+@font-face {
+    font-family: 'Bellavoir';
+    src: url('../fontes/bellavoir_delight/BellavoirDelight_PERSONAL_USE_ONLY.otf') format('truetype');
+}
+
 h1{
     color:#FFFCF2;
     font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Bellavoir';
 }
+h3, p, label, input, th{
+    font-family: 'Simple';
+}
+h2, h3{
+    color:#FFFCF2;
+    font-family: 'Simple';
+}
+
+
 
 #login{
     width: 750px;
     height: 300px;
     border-radius: 51.216px;
-    border: 4.656px solid #FFB3C6;
-    background: #FFE5EC;
+    border: 4.656px solid #f497b6;
+    background: #fce4ec;
     padding-top: 10px;
 }
 #login>label{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     margin-left: 30px;
+    color: #444444;
 }
 
 #login>input{
     width: 650px;
     height: 65px;
     border-radius: 18.624px;
-    border: 4.656px solid #FFB3C6;
-    background: #FFFCF2;
+    border: 4.656px solid #f497b6	;
+    background: #fdfdfd;
     margin-left: 30px;
 }
 #botao_login>button{
     width: 300px;
     height: 45px;
     border-radius: 58.98px;
-    border: 6.939px solid #FFB3C6;
+    border: 6.939px solid #f497b6	;
     background: #FFE5EC;
     margin-top:35px;
     margin-left: 200px;
@@ -53,34 +77,33 @@ h1{
     width: 300px;
     height: 45px;
     border-radius: 58.98px;
-    border: 6.939px solid #FFB3C6;
-    background: #FFE5EC;
+    background: #f497b6	;
+    border: 4.656px solid #f497b6	;
 }
 #pagInicial>form>button{
     width: 300px;
     height: 45px;
     border-radius: 58.98px;
+    background: #f497b6	;
+    border: 4.656px solid #f497b6	;
+}
+#logo>img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
     border: 6.939px solid #FFB3C6;
-    background: #FFE5EC;
 }
 .inicio>a,button{
     text-decoration: none;
     padding: 10px 53px;
     border-radius: 58.98px;
-    border: 6.939px solid #FFB3C6;
-    background: #FFE5EC;
+    background: #f497b6	;
     color: black;
     width: 300px;
     height: 45px;
+    border: 4.656px solid #f497b6	;
     
 }
-/* .botao_inicio>button{
-    width: 300px;
-    height: 45px;
-    border-radius: 58.98px;
-    border: 6.939px solid #FFB3C6;
-    background: #FFE5EC;
-} */
 
 #link_cadastro{
     color:black;
@@ -91,16 +114,16 @@ h1{
     width: 750px;
     height: 400px;
     border-radius: 51.216px;
-    border: 4.656px solid #FFB3C6;
-    background: #FFE5EC;
+    border: 4.656px solid #f497b6	;
+    background: #fce4ec;
     padding-top: 15px;
 }
 #cadastro>input{
     width: 650px;
     height: 65px;
     border-radius: 18.624px;
-    border: 4.656px solid #FFB3C6;
-    background: #FFFCF2;
+    border: 4.656px solid #f497b6	;
+    background: #fdfdfd;
     margin-left: 60px;
    
 }
@@ -108,14 +131,14 @@ h1{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     margin-left: 50px;
+    color: #444444;
 }
 #botao_cadastro>button{
     width: 300px;
     height: 45px;
     border-radius: 58.98px;
-    border: 6.939px solid #FFB3C6;
-    background: #FFE5EC;
-    margin-top:35px;
+    background: #f497b6	;
+    border: 4.656px solid #f497b6	;
     margin-left: 200px;
 }
 
@@ -125,9 +148,9 @@ h1{
 }
 
 table{
-    background-color: #FFE5EC;
+    background-color: #fce4ec;
     width: 100%;
-    border: 6.939px solid #FFB3C6;
+    border: 6.939px solid #f497b6	;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -138,15 +161,16 @@ table>th, td{
 tr>th{
     padding: 5px;
     font-size: 20px;
-   
+    color: #444444;
+    font-family: 'Simple';
 }
 
 #estoque{
     width: 750px;
     height: 430px;
     border-radius: 51.216px;
-    border: 4.656px solid #FFB3C6;
-    background: #FFE5EC;
+    border: 4.656px solid #f497b6	;
+    background: #fce4ec;
     padding-top: 10px;
     margin-top: 20px;
 }
@@ -158,28 +182,30 @@ tr>th{
     border-radius: 30px;
     padding: 5px;
     color:#83C5BE;
-    border: 2px solid #FFB3C6;
+    border: 2px solid #f497b6	;
+    background-color: #fdfdfd;
 }
 #estoque>label{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     margin-left: 30px;
+    color: #444444;
 }
 #botao_estoque>button{
     width: 300px;
     height: 45px;
     border-radius: 58.98px;
-    border: 6.939px solid #FFB3C6;
-    background: #FFE5EC;
+    background: #f497b6	;
     margin-top:35px;
     margin-left: 208px;
+    border: 4.656px solid #f497b6	;
 }
 #cadastro{
     width: 750px;
     height: 430px;
     border-radius: 51.216px;
-    border: 4.656px solid #FFB3C6;
-    background: #FFE5EC;
+    border: 4.656px solid #f497b6	;
+    background: #fce4ec;
     padding-top: 10px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -192,38 +218,31 @@ tr>th{
     border-radius: 30px;
     padding: 5px;
     color:#83C5BE;
-    border: 2px solid #FFB3C6;
+    border: 2px solid #f497b6	;
+    background-color: #fdfdfd;
 }
 #cadastro>label{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     margin-left: 30px;
+    color: #444444;
 }
 #botao_cadastro>button{
     width: 300px;
     height: 45px;
     border-radius: 58.98px;
-    border: 6.939px solid #FFB3C6;
-    background: #FFE5EC;
+    background: #f497b6	;
     margin-top:80px;
     margin-left: 220px;
+    border: 4.656px solid #f497b6	;
 }
 
-#leitura_cadastro>button{
-    width: 300px;
-    height: 45px;
-    border-radius: 58.98px;
-    border: 6.939px solid #FFB3C6;
-    background: #FFE5EC;
-    margin-top:180px;
-    margin-left: 220px;
-}
 a{
     text-decoration: none;
-    color:#4ea098;
+    color: #444444;
 }
 button>a{
-    color: black;
+    color: #fdfdfd;
     font-size: 15px;
 }
 
@@ -232,11 +251,6 @@ h3{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
 }
-button:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    cursor:pointer;
-}
-
 
 .inicio{
     display: flex;
@@ -259,13 +273,13 @@ button:hover{
    height: 280px;
    border-radius: 20px;
    margin-left: 0px;
-   border: 6.939px solid #FFB3C6; 
+   border: 6.939px solid #f497b6	; 
 }
 .div_logout>button{
     width: 288px;
-   
+    border: 4.656px solid #f497b6	;
+    background: #f497b6	;
 }
-
 
 .div_cadastro{
     flex-direction: column;
@@ -281,11 +295,13 @@ button:hover{
     height: 280px;
     border-radius: 20px;
     margin-left: 0px;
-    border: 6.939px solid #FFB3C6; 
+    border: 6.939px solid #f497b6	; 
 }
 
 .div_cadastro>button{
     width: 280px;
+    border: 4.656px solid #f497b6	;
+    background: #f497b6	;
 }
 
 
@@ -301,11 +317,13 @@ button:hover{
     width: 280px;
     height: 280px;
     border-radius: 20px;
-    border: 6.939px solid #FFB3C6; 
+    border: 6.939px solid #f497b6	; 
 }
 
 .div_estoque>button{
     width: 280px;
+    border: 4.656px solid #f497b6	;
+    background: #f497b6	;
 }
 
 .div_agendamentos{
@@ -323,8 +341,85 @@ button:hover{
     border-radius: 20px;
     margin-left: 0px;
     margin-top: 30px;
-    border: 6.939px solid #FFB3C6; 
+    border: 6.939px solid #f497b6	; 
 }
 .div_agendamentos>button{
     width: 280px;
+    border: 4.656px solid #f497b6	;
+    background: #f497b6	;
 }
+
+.div_catalogo{
+    flex-direction: column;
+    width: 320px;
+    height: 300px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 15px;
+
+}
+.div_catalogo>img{
+   margin-left: 0%;
+   width: 280px;
+   height: 280px;
+   border-radius: 20px;
+   margin-left: 0px;
+   border: 6.939px solid #f497b6	; 
+}
+.div_catalogo>button{
+    width: 288px;
+    border: 4.656px solid #f497b6	;
+    background: #f497b6	;
+}
+
+#cabecalho{
+    display: flex;
+    background-color: #fce4ec;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 5px;
+}
+#cabecalho>li{
+    list-style-type: none;
+    padding: 5px;
+    padding-right: 10px;
+    font-size: 18px;
+    text-align: center;
+    border-right:1px solid #e2959f;
+}
+
+#cabecalho>li:hover{
+    background-color: #ffdce6;
+}
+#cabecalho>img{
+    width: 65px;
+    height: 65px;
+    border-radius: 100px;
+    margin-right: 700px;
+    margin-left: 3px;
+    border: 3px solid #f497b6	; 
+}
+button{
+    color: #fdfdfd;
+}
+
+button:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor:pointer;
+    background-color:#ff95a3;
+    color:#444444;
+    border: #e2959f;
+}
+button>a:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor:pointer;
+    background-color:#ff95a3;
+    color:#444444;
+    border: #e2959f;
+}
+

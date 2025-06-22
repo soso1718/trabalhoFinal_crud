@@ -11,11 +11,11 @@
         require_once 'seguranca.php'
     ?>
 
+<div id="logo">
+<img src="images/logo.png">
+</div>
     <h1>O que você procura?</h1> <br>
     <div id="pagInicial">
-        <!-- <form action="logout.php">
-            <button type="submit">Logout</button> <br> <br>
-        </form> -->
 
         <div class="inicio">
             <div class="div_logout">
@@ -23,7 +23,7 @@
                 <button> <a href="http://localhost/trabalho_final_login/logout.php">Logout</a></button> <br> <br>
             </div>
             <div class="div_cadastro">
-                <!-- <img src="images/icon_cadastro.png">  -->
+                <img src="images/icon_cadastro.png"> 
                 <button> <a href="http://localhost/trabalho_final_login/pagCadastro"> Cadastro de pacientes  </a> </button> <br> <br>
             </div>
 
@@ -38,7 +38,7 @@
             </div>
 
             <div class="div_catalogo">
-                <!-- <img src="images/icon_catalogo.png">  -->
+                <img src="images/icon_catalogo.png"> 
                 <button type="submit">Catálogo</button> <br> <br>
             </div>
         </div>
