@@ -61,28 +61,23 @@ require_once 'seguranca.php';
     </menu>
 
     <h1>Gerenciador de estoque</h1>
-    <table id="tabela_estoque" border="1" width="100%">
-        <tr>
-            <th>Produto</th> 
-            <th>Validade</th>
-            <th>Quantidade</th>
-            <th>Categoria</th>
-            <th>Ações</th>
-        </tr>
-
         <?php
         try {
             $stmt = $conexao->prepare("SELECT * FROM estoque");
             if ($stmt->execute()) {
+                echo "<div class='caixinhas'>";
                 while ($rs = $stmt->fetch(PDO::FETCH_OBJ)) {
-                echo "<tr>";
-                echo "<td>".$rs->produto."</td><td>".$rs->validade."</td><td>".$rs->quantidade."</td><td>.$rs->categoria.";
-                echo "<td><center>";
+                echo "<div class='caixa'>";
+                echo "<p><strong>Produto: </strong>".$rs->produto."</p> <br>";
+                echo "<p><strong>Validade: </strong>".$rs->validade."</p> <br>";
+                echo "<p><strong>Quantidade: </strong>".$rs->quantidade."</p> <br>";
+                echo "<p><strong>Categoria: </strong>".$rs->categoria."</p> <br>";
+                echo "<div class='acoes'>";
                 echo "<a href=\"http://localhost/trabalho_final_login/form_atualizaEstoque.php?id=".$rs->id_lote."\">[Alterar]</a>";
                 echo "<a href=\"http://localhost/trabalho_final_login/deleteEstoque.php?id=".$rs->id_lote."\" onclick=\"return confirm('Tem certeza que deseja excluir esse paciente?')\">[Excluir]</a>" ;
-                echo "</center></td>";
-                echo "</tr>";
-                }
+                echo "</div>";
+                echo "</div>";
+                } echo "</div>";
             } else {
             echo "Erro: Não foi possível recuperar os dados do banco de dados";
             }
@@ -90,7 +85,6 @@ require_once 'seguranca.php';
         echo "Erro: ".$erro->getMessage();
         }
     ?>
-    </table>
     <button><a href="http://localhost/trabalho_final_login/form_estoque.php"> Adicionar novo lote </a></button>
 
     

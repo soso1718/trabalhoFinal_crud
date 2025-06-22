@@ -29,7 +29,7 @@
 
             <div class="div_estoque">
                 <img src="images/icon_estoque.png"> 
-                <button><a href="http://localhost/trabalho_final_login/form_estoque.php"> Estoque </a> </button> <br> <br>
+                <button><a href="http://localhost/trabalho_final_login/estoque.php"> Estoque </a> </button> <br> <br>
             </div>
 
             <div class="div_agendamentos">

@@ -29,6 +29,7 @@ h1{
     color:#FFFCF2;
     font-size: 50px;
     font-family: 'Bellavoir';
+    text-align: center;
 }
 h3, p, label, input, th{
     font-family: 'Simple';
@@ -68,7 +69,7 @@ h2, h3{
     height: 45px;
     border-radius: 58.98px;
     border: 6.939px solid #f497b6	;
-    background: #FFE5EC;
+    background: #f497b6;
     margin-top:35px;
     margin-left: 200px;
 }
@@ -91,7 +92,7 @@ h2, h3{
     width: 150px;
     height: 150px;
     border-radius: 100px;
-    border: 6.939px solid #FFB3C6;
+    border: 6.939px solid #f497b6;
 }
 .inicio>a,button{
     text-decoration: none;
@@ -415,7 +416,6 @@ button:hover{
     border: #e2959f;
 }
 button>a:hover{
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     cursor:pointer;
     background-color:#ff95a3;
@@ -423,3 +423,31 @@ button>a:hover{
     border: #e2959f;
 }
 
+.caixinhas{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: center;
+}
+.caixa{
+    background-color: #fce4ec;
+    border: 6.939px solid #f497b6;
+    padding: 15px;
+    width: 280px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+}
+.acoes {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.acoes a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #444444;
+}
+.acoes a:hover{
+    color: #f497b6;
+}

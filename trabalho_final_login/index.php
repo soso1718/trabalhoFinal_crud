@@ -14,7 +14,7 @@
                 echo "<h3> Ops, e-mail ou senha incorretos!Por favor tente novamente.</h3> <br>";
         }}
     ?>
-    
+    <div id="logo"><img src="images/logo.png"> </div> <br> <br> 
     <h1>Seja bem vindo novamente! Digite seu e-mail e senha para entrar. </h1> <br> <br>
     <form action="login.php" method="POST">
         <div id="login">
