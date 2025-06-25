@@ -16,10 +16,10 @@ if(!empty($id) && !empty($nome) && !empty($email) && !empty($cpf)){
         header("Location: cadastro.php?sucesso=3");
         exit;
     }catch(PDOException $erro){
-        echo "erro ao atualizar: " . $erro->getMessage();
+        echo "Erro ao atualizar: " . $erro->getMessage();
     }
 }else{
-    echo "preencha todos os campo";
+    echo "Preencha todos os campos";
 }
 
 ?>

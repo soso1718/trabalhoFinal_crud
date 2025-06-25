@@ -1,7 +1,6 @@
 <?php
 require_once 'conexao.php';
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        // $id = (isset($_POST["id"]) && $_POST["id"] != null) ? $_POST["id"] : "";
         $nome = (isset($_POST["nome"]) && $_POST["nome"] != null) ? $_POST["nome"] : "";
         $email = (isset($_POST["email"]) && $_POST["email"] != null) ? $_POST["email"] : "";
         $cpf = (isset($_POST["cpf"]) && $_POST["cpf"] != null) ? $_POST["cpf"] : "";

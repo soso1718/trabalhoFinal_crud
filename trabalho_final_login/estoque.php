@@ -1,7 +1,6 @@
 <?php
 require_once 'conexao.php';
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        // $id = (isset($_POST["id"]) && $_POST["id"] != null) ? $_POST["id"] : "";
         $produto = (isset($_POST["produto"]) && $_POST["produto"] != null) ? $_POST["produto"] : "";
         $validade = (isset($_POST["validade"]) && $_POST["validade"] != null) ? $_POST["validade"] : "";
         $quantidade = (isset($_POST["quantidade"]) && $_POST["quantidade"] != null) ? $_POST["quantidade"] : "";
